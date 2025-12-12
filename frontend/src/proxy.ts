@@ -13,7 +13,7 @@ const OAUTH_ROUTES = [
   "/google-success",
 ];
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const url = req.nextUrl.clone();
   const pathname = url.pathname;
 
