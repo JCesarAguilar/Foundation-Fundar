@@ -37,7 +37,7 @@ export default function BurgerMenu() {
             onClick={closeMenu}
           />
 
-          <div className="absolute right-0 top-0 w-64 h-full bg-white-smoke shadow-lg p-6 z-50">
+          <div className="absolute left-0 top-0 w-64 h-full bg-white-smoke shadow-lg p-6 z-50">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-semibold text-black-medium">Menu</h2>
               <button onClick={closeMenu}>
