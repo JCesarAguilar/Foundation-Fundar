@@ -43,7 +43,7 @@ body {
 }
 
 .form-label {
-  @apply font-bold text-black-medium;
+  @apply font-bold text-black-medium lg:text-[16px] text-[14px];
 }
 
 .form-label-sec {
@@ -51,7 +51,7 @@ body {
 }
 
 .form-input {
-  @apply p-3 border border-gray-medium rounded-md;
+  @apply p-3 border border-gray-medium rounded-md lg:text-[16px] text-[14px];
 }
 
 .form-input-sec {
@@ -59,15 +59,15 @@ body {
 }
 
 .btn-primary {
-  @apply bg-bluesky-strong text-black-medium py-3 px-7 rounded font-semibold cursor-pointer hover:bg-bluesky-soft transition;
+  @apply bg-bluesky-strong text-black-medium py-3 px-7 rounded font-semibold cursor-pointer hover:bg-bluesky-soft transition lg:text-[16px] text-[14px];
 }
 
 .btn-form-primary {
-  @apply w-full bg-blue-strong text-white-smoke py-3 rounded-md font-bold cursor-pointer hover:bg-blue-medium transition;
+  @apply w-full bg-blue-strong text-white-smoke py-3 rounded-md font-bold cursor-pointer hover:bg-blue-medium transition lg:text-[16px] text-[14px];
 }
 
 .btn-form-secondary {
-  @apply w-full border-2 border-blue-medium text-blue-medium py-3 rounded-md font-bold hover:border-blue-strong hover:text-blue-strong cursor-pointer transition;
+  @apply w-full border-2 border-blue-medium text-blue-medium py-3 rounded-md font-bold hover:border-blue-strong hover:text-blue-strong cursor-pointer transition lg:text-[16px] text-[14px];
 }
 
 .nav-items {

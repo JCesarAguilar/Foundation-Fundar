@@ -13,6 +13,7 @@ import { getProjectById } from "@/services/project.services";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { PATHROUTES } from "@/helpers/NavItems";
+import ProjectGoalProgress from "@/components/projects/ProjectGoalProgress";
 
 export default function ProjectDetailPage() {
   const params = useParams();
@@ -60,69 +61,51 @@ export default function ProjectDetailPage() {
   const firstPart = rest.reverse().join(" ");
 
   return (
-    <section className="relative bg-gray-soft lg:pt-20 lg:pb-30">
+    <section className="relative bg-gray-soft lg:pt-20 lg:pb-30 px-5 lg:px-30 ">
       <div className="absolute inset-0 bg-black/10 z-0"></div>
       <div className="relative z-10">
         <BackButton />
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-40 py-10 px-7 lg:px-30">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-30 lg:py-15 py-6">
           <div className="lg:w-1/2">
             <Image
               src={projectData.imageUrls[0]}
               alt={`Imagen de ${projectData.title}`}
               width={1400}
               height={1400}
-              className="rounded-xl h-[500px]"
+              className="rounded-xl"
             />
           </div>
-          <div className="flex flex-col justify-center gap-6 lg:w-1/2">
-            <TitleProject>
+          <div className="flex flex-col justify-between lg:gap-6 gap-3 lg:w-1/2 ">
+            <TitleProject className="text-center lg:text-left">
               {firstPart}
               <br />
               <span>{lastWord}</span>
             </TitleProject>
-            <P1>{`${projectData.resume}`}</P1>
+            <P1 className="pb-5 lg:pb-3">{`${projectData.resume}`}</P1>
 
             <button
               type="button"
               onClick={handleDonate}
-              className="btn-primary mt-7 self-start"
+              className="btn-primary lg:self-start"
             >
               DONATE
             </button>
           </div>
         </div>
 
-        <div className="lg:px-30 flex pt-15 pb-30 gap-30 2xl:gap-80">
-          <div className=" flex flex-col gap-7">
-            <H2>DESCRIPTION</H2>
-            <P1 className="w-[600px]">{projectData.description}</P1>
+        <div className="flex flex-col lg:flex-row lg:pt-15 lg:pb-30 pb-15 lg:gap-30 gap-10 py-5">
+          <div className=" flex flex-col lg:gap-7 lg:w-1/2 gap-3">
+            <H2 className="text-center lg:text-left">DESCRIPTION</H2>
+            <P1 className="text-justify">{projectData.description}</P1>
           </div>
-          <div className="flex flex-col gap-7 justify-start">
-            <H2>PROJECT DETAILS</H2>
-            <div className="flex gap-2 items-center">
-              <GoArrowRight className="text-blue-strong text-3xl" />
-              <P1>
-                <span className="font-semibold">Goal:</span> $
-                {projectData.goalAmount.toLocaleString("en-US", {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })}
-              </P1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <GoArrowRight className="text-blue-strong font-extrabold text-3xl" />
-              <P1>
-                <span className="font-semibold">Raised:</span> $
-                {Number(projectData?.currentAmount ?? 0).toLocaleString(
-                  "en-US",
-                  {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  }
-                )}
-              </P1>
-            </div>
-            <div className="flex gap-2 items-center">
+
+          <div className="flex flex-col lg:gap-7 gap-5 justify-start lg:w-1/2 ">
+            <H2 className="text-center lg:text-left">PROJECT DETAILS</H2>
+            <ProjectGoalProgress
+              goal={projectData.goalAmount}
+              raised={projectData?.currentAmount ?? 0}
+            />
+            <div className="flex gap-2 items-center pt-2">
               <GoArrowRight className="text-blue-strong font-extrabold text-3xl" />
               <P1>
                 <span className="font-semibold">Country:</span>{" "}
@@ -132,21 +115,21 @@ export default function ProjectDetailPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 lg:px-30">
-          <div className="flex flex-col gap-7">
+        <div className="grid lg:grid-cols-2 gap-5 pb-15 lg:pb-0">
+          <div className="flex flex-col gap-5">
             <Image
               src={projectData.imageUrls[1]}
               alt={`Imagen de ${projectData.title}`}
               width={600}
               height={400}
-              className="rounded-lg object-cover w-full h-[285px]"
+              className="rounded-lg object-cover w-full "
             />
             <Image
               src={projectData.imageUrls[2]}
               alt={`Imagen de ${projectData.title}`}
               width={600}
               height={400}
-              className="rounded-lg object-cover w-full h-[285px]"
+              className="rounded-lg object-cover w-full "
             />
           </div>
 
@@ -156,7 +139,7 @@ export default function ProjectDetailPage() {
               alt={`Imagen de ${projectData.title}`}
               width={800}
               height={600}
-              className="rounded-lg object-cover w-full h-[600px]"
+              className="rounded-lg object-cover w-full h-full"
             />
           </div>
         </div>

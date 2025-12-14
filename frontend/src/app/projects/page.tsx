@@ -58,10 +58,10 @@ export default function ProjectsPage() {
   if (isLoading) return <Loading />;
   return (
     <section>
-      <div className="relative  lg:pb-10 bg-white-smoke bg-opacity-40 backdrop-blur-2xl pt-7">
+      <div className="relative  lg:pb-10 bg-white-smoke bg-opacity-40 backdrop-blur-2xl">
         <div className="absolute inset-0 bg-black/40 z-0"></div>
         <div className="relative z-10">
-          <div className="lg:px-12 pb-7">
+          <div className="lg:px-12 lg:py-10 py-5">
             <CountryFilter
               countries={countries}
               selectedCountry={country}

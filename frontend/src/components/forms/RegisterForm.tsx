@@ -49,7 +49,7 @@ export default function RegisterForm() {
             value={formik.values.firstName}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="p-3 border border-gray-500 border-r-0 rounded-l-md w-1/2"
+            className="p-3 border border-gray-500 border-r-0 rounded-l-md w-1/2 text-[14px] lg:text-[16px]"
           />
           <input
             id="lastName"
@@ -59,7 +59,7 @@ export default function RegisterForm() {
             value={formik.values.lastName}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="p-3 border border-gray-500 rounded-r-md w-1/2"
+            className="p-3 border border-gray-500 rounded-r-md w-1/2 text-[14px] lg:text-[16px]"
           />
         </div>
         <div className="flex gap-3">
@@ -143,7 +143,7 @@ export default function RegisterForm() {
 
         <Link
           href={PATHROUTES.LOGIN}
-          className="text-blue-strong hover:underline text-center pt-2 text-sm"
+          className="text-blue-strong hover:underline text-center pt-2 text-sm mt-2"
         >
           Already have an account? Sign in
         </Link>

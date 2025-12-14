@@ -4,7 +4,7 @@ import { P2, TitleBanner } from "../common/Typography";
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-white-smoke text-white py-20">
+    <section className="bg-white-smoke text-white py-15 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <TitleBanner className="text-black-soft mb-4">
           What people say

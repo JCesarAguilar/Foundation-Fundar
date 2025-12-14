@@ -28,7 +28,7 @@ export const TitleCategory = ({ children, className }: TypographyProps) => {
 export const TitleProject = ({ children, className }: TypographyProps) => {
   return (
     <h1
-      className={`text-[30px] lg:text-5xl font-bold mb-4 leading-15 font-kazimir uppercase tracking-wider ${className}`}
+      className={`text-[30px] lg:text-5xl font-bold mb-4 font-kazimir uppercase tracking-wider leading-[45px] lg:leading-[60px] ${className}`}
     >
       {children}
     </h1>
@@ -38,7 +38,7 @@ export const TitleProject = ({ children, className }: TypographyProps) => {
 export const TitleForm = ({ children, className }: TypographyProps) => {
   return (
     <h2
-      className={`text-3xl font-kazimir text-black-medium text-center font-stretch-semi-condensed ${className}`}
+      className={`lg:text-3xl text-2xl font-kazimir text-black-medium text-center font-stretch-semi-condensed ${className}`}
     >
       {children}
     </h2>
@@ -48,7 +48,7 @@ export const TitleForm = ({ children, className }: TypographyProps) => {
 export const H2 = ({ children, className }: TypographyProps) => {
   return (
     <p
-      className={`text-[30px] font-bold font-kazimir tracking-wide leading-relaxed ${className}`}
+      className={`lg:text-[30px] text-[25px]  font-bold font-kazimir tracking-wide leading-relaxed ${className}`}
     >
       {children}
     </p>
