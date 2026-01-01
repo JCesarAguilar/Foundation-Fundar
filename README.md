@@ -6,77 +6,84 @@ Permite visualizar campañas, donar de forma segura, gestionar usuarios y admini
 Este proyecto fue desarrollado como parte del **Final Project – Henry Bootcamp**, en un equipo de 01 frontend y 01 backend.  
 Yo participé como **Frontend Developer**.
 
+---
+
 ## 🚀 Demo en vivo
 
-🔗 **Frontend Deploy:** https://demo2-five-phi.vercel.app/
+🔗 [Ver sitio desplegado en Vercel](https://demo2-five-phi.vercel.app/)
 
 ---
 
-## 📸 Screenshots
+## 🧠 Funcionalidades principales
 
-### 🏠 Home
+- ✅ Visualización de campañas activas
+- ✅ Donaciones únicas con Stripe
+- ✅ Registro/login con cuenta propia o Google OAuth
+- ✅ Panel de usuario con historial de donaciones
+- ✅ Panel de administrador con gestión de usuarios y proyectos
+- ✅ Subida de imágenes a Cloudinary
+- ✅ Envío de emails automáticos
+- ✅ Chatbot básico integrado
+- ✅ Responsive design para desktop, tablet y móvil
 
-![Home](./assets/home.png)
+---
 
-## 🧩 Tecnologías principales
+## 🛠️ Tecnologías utilizadas
 
 ### **Frontend**
 
-- Next.js
-- React
-- Tailwind CSS
-- JWT Authentication
-- Google OAuth2
-- Context
-- Vercel (deploy)
+- ⚛️ Next.js
+- ✨ React
+- 🎨 Tailwind CSS
+- 🔐 JWT Authentication
+- 🔐 Google OAuth2
+- 🧠 Context API
+- 📦 Vercel (Deploy)
 
 ### **Backend**
 
-- Node.js / Express
-- PostgreSQL
-- Sequelize / Prisma
-- JWT
-- Nodemailer
-- Cloudinary
-- Cron Jobs (node-cron)
-- Render (deploy)
+- 🟩 Node.js + Express
+- 🐘 PostgreSQL
+- 🔗 Sequelize / Prisma
+- ✉️ Nodemailer
+- ☁️ Cloudinary
+- ⏰ Cron Jobs (`node-cron`)
+- 📦 Render (Deploy)
 
 ---
 
-## 🎯 Funcionalidades principales
+## 🖼️ Capturas del sitio
 
-### 👤 **Usuarios**
+| Página de inicio           | Login                      | Register                         |
+| -------------------------- | -------------------------- | -------------------------------- |
+| ![Inicio](assets/home.png) | ![Login](assets/login.png) | ![Register](assets/register.png) |
 
-- Registro con autenticación propia.
-- Inicio de sesión con Google OAuth2.
-- Actualización de perfil y foto.
-- Historial de donaciones.
+| Dashboard Admin Overview                               | Dashboard Admin Projects            |
+| ------------------------------------------------------ | ----------------------------------- |
+| ![Admin Overview](assets/admin-dashboard-overview.png) | ![Admin Projects](assets/login.png) |
 
-### 🎁 **Donaciones**
+---
 
-- Donaciones únicas.
-- Pasarela de pagos (Stripe).
-- Confirmación de donación vía email.
-- Métricas de avance en tiempo real.
+## 📁 Estructura del frontend
 
-### 📢 **Proyectos**
+```bash
+frontend/
+├── public/                    # Recursos estáticos
+├── src/
+│   ├── app/                   # Rutas (App Router)
+│   ├── components/           # Componentes reutilizables
+│   ├── context/              # Context API
+│   ├── helpers/              # Funciones de utilidad
+│   ├── interfaces/           # Tipado global (TypeScript)
+│   ├── services/             # Peticiones HTTP y lógica externa
+│   ├── utils/                # Validaciones y helpers extra
+│   └── validators/           # Validación de formularios
+└── proxy.ts                  # Configuración de proxy para API
 
-- Visualización de proyectos activos.
-- Filtro por paises.
-- Detalles completos de cada proyecto: monto objetivo, descripción, imagen, etc.
-
-### 🛠 **Administrador**
-
-- CRUD completo de proyectos.
-- Gestión de usuarios y donaciones.
-- Subida de imágenes (Cloudinary).
-
-### 🤖 **Chatbot**
-
-- Bot básico integrado en el frontend.
 
 ### 📨 **Notificaciones automáticas**
 
 - Emails de bienvenida.
 - Confirmación de donaciones.
 - Report de proyectos (cron jobs).
+```
