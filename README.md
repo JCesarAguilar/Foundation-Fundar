@@ -58,9 +58,9 @@ Yo participé como **Frontend Developer**.
 | -------------------------- | -------------------------- | -------------------------------- |
 | ![Inicio](assets/home.png) | ![Login](assets/login.png) | ![Register](assets/register.png) |
 
-| Dashboard Admin Overview                               | Dashboard Admin Projects            |
-| ------------------------------------------------------ | ----------------------------------- |
-| ![Admin Overview](assets/admin-dashboard-overview.png) | ![Admin Projects](assets/login.png) |
+| Dashboard Admin Overview                               | Dashboard Admin Projects                               |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Admin Overview](assets/admin-dashboard-overview.png) | ![Admin Projects](assets/admin-dashboard-projects.png) |
 
 ---
 
