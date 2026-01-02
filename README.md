@@ -54,13 +54,13 @@ Yo participé como **Frontend Developer**.
 
 ## 🖼️ Capturas del sitio
 
-| Página de inicio           | Login                      | Register                         |
-| -------------------------- | -------------------------- | -------------------------------- |
-| ![Inicio](assets/home.png) | ![Login](assets/login.png) | ![Register](assets/register.png) |
+| Página de inicio                           | Login                                     | Register                                        |
+| ------------------------------------------ | ----------------------------------------- | ----------------------------------------------- |
+| ![Inicio](frontend/public/assets/home.png) | ![Login](frontend/publicassets/login.png) | ![Register](frontend/publicassets/register.png) |
 
-| Dashboard Admin Overview                               | Dashboard Admin Projects                               |
-| ------------------------------------------------------ | ------------------------------------------------------ |
-| ![Admin Overview](assets/admin-dashboard-overview.png) | ![Admin Projects](assets/admin-dashboard-projects.png) |
+| Dashboard Admin Overview                                              | Dashboard Admin Projects                                              |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| ![Admin Overview](frontend/publicassets/admin-dashboard-overview.png) | ![Admin Projects](frontend/publicassets/admin-dashboard-projects.png) |
 
 ---
 
